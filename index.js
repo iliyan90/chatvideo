@@ -10,7 +10,11 @@ const io = new Server(server, {
     cors: '*',
     method: ["GET", "POST"]
 });
-app.use(cors());
+let corsOptions = {
+    origin: 'http://videochat77.rf.gd/',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }
+app.use(cors(corsOptions));
 
 const PORT = 3001;
 
