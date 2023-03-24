@@ -11,7 +11,7 @@ const io = new Server(server, {
     method: ["GET", "POST"]
 });
 const corsOptions = {
-    origin: 'http://videochat77.rf.gd',
+    origin: 'http://videochat77.netlify.app',
     credentials: true
   }
 app.use(cors(corsOptions));
